@@ -1,0 +1,115 @@
+/* ===============================
+   NAVBAR
+   =============================== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 140px;
+  background-color: #f4f3f1;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2b2e34;
+  border: 2px solid #2b2e34;
+  padding: 6px 14px;
+}
+
+/* ===============================
+   NAV LINKS
+   =============================== */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links a,
+.dropdown-toggle {
+  position: relative;
+  font-size: 14px;
+  color: #2b2e34;
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 4px;
+}
+
+/* Underline */
+.nav-links a::after,
+.dropdown-toggle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #2b2e34;
+  transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after,
+.dropdown:hover .dropdown-toggle::after {
+  width: 100%;
+}
+
+/* ===============================
+   DROPDOWN
+   =============================== */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Arrow */
+.arrow {
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 260px;
+  background-color: #f4f3f1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  padding: 12px 0;
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #2b2e34;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}

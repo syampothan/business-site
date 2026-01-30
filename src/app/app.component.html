@@ -1,11 +1,27 @@
 <header class="navbar">
-  <div class="logo">PRESSON</div>
+  <!-- LEFT: Home -->
+  <a routerLink="/" class="logo">Home</a>
 
-  <nav>
-    <a href="#">About us</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+  <!-- RIGHT: Navigation -->
+  <nav class="nav-links">
+    <a routerLink="/about" routerLinkActive="active">About us</a>
+
+    <!-- Projects dropdown -->
+    <div class="dropdown">
+      <span class="dropdown-toggle">
+        Projects <span class="arrow">▼</span>
+      </span>
+
+      <div class="dropdown-menu">
+        <a href="#">Project 1</a>
+        <a href="#">Project 2</a>
+        <a href="#">Project 3</a>
+      </div>
+    </div>
+
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
   </nav>
 </header>
 
+<!-- Routed pages render here -->
 <router-outlet></router-outlet>

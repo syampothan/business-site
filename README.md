@@ -29,8 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 This is what we are planning to develop
 
-https://builder.hostinger.com/wkKVWkgOinQXCMAH/preview
+https://www.hostinger.com/in/templates/business
 
-this is the changes
-
+choose "presson"
 

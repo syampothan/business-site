@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  background: #f3f2f1;
+}
+
+.logo {
+  font-weight: 700;
+  border: 2px solid #222;
+  padding: 5px 10px;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
